@@ -1,0 +1,39 @@
+﻿<html>
+<head><title>11주차 실습과제</title>
+<style>
+	body{background-color:black;font-size:20;color:navy;text-align:center;
+	margin:0;}
+	h1{color:yellow;font-family:굴림체}
+	h2{font-family:휴먼옛체}
+	p{font-weight:bold;}
+	
+	#layer1{position:absolute;left:100;top:75;width:700;height:300;
+		background-color:green;z-index:1;}
+	
+	#layer2{position:absolute;left:150;top:150;width:700;height:300;
+		background-color:yellow;visibility:hidden;z-index:2;}
+	
+	#layer3{position:absolute;left:200;top:225;width:700;height:300;
+		background-color:aqua;visibility:hidden;z-index:3;}
+	
+	#layer4{width:300;height:200;
+		background-color:#D3C64A;float:left;margin-left:20;padding:10}
+	
+	#layer5{width:300;height:200;
+		background-color:#D3C64A;float:right;margin-right:20;padding:10}
+</style></head>
+<body>
+<div id=layer1 OnMouseDown="layer2.style.visibility='visible'"
+				OnMouseOver="layer2.style.visibility='hidden'">
+<h1>전산기초실습 실습과제</h1>
+<p>이 레이어를 클릭하면 다음 레이어가 나타납니다.</p></div>
+<div id=layer2 OnMouseDown="layer3.style.visibility='visible'">
+<h2>학번: 20183270 이름: 김 혜 린</h2>
+<p style=color:green>이 레이어를 클릭하면 다음 레이어가 나타납니다.<br><br>
+초록 레이어에 마우스 포인터를 올리면 이 레이어가 사라집니다.</p></div>
+<div id=layer3 OnMouseDown="layer3.style.visibility='hidden'">
+<p>이 레이어를 숨기고 싶다면 이 레이어를 클릭하세요!</p>
+<div id=layer4><br>왼쪽 레이어입니다.<br><br>float 속성을 사용하여 왼쪽에 배치하세요.</div>
+<div id=layer5><br>오른쪽 레이어입니다.<br><br>float 속성을 사용하여 오른쪽에 배치하세요.</div></div>
+</body>
+</html>

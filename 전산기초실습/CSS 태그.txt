@@ -1,0 +1,6 @@
+<head>
+<style type="text/css">  // type 생략가능
+	font {font-size:18pt ; font-family:궁서체}
+	b {font-size:36pt ; color:red ; font-family:굴림체}
+</style>
+</head>

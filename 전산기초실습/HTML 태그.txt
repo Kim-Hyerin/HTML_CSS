@@ -1,0 +1,45 @@
+[특수문자]
+&nbsp;  // 공백
+&lt;      // < less than
+&gt;     // > greater than
+&#60;   // < ASCII 코드
+&#62;   // > ASCII 코드 , 결과 동일
+&amp;  // &
+&quot;  // " 따옴표
+&copy;  // copy right
+<!-- 내용 -->  // 주석
+
+<p> = 줄 바꾸고, 빈 줄 삽입 = <br><br> , 문단 기능, 중복x 추가는 <br>
+<p align=justify> 양쪽 가지런히 정렬
+(여백생김)<blockquote>내용</blockquote>(여백생김), 줄바꿈 // 인용문
+<q>내용</q> // 내용 앞뒤에 모양이쁜 따옴표
+<div>내용</div> // 줄바꿈 , align 속성
+
+<center></center> 평상시 왼쪽 정렬, center부터 가운데 정렬시작
+<pre></pre> 입력 그대로 본문에 나타냄(공백o태그x)
+<xmp></xmp> 입력 그대로 본문에 나타냄(공백o태그o)
+
+<b> , <strong> bold
+<i> , <em> 기울임 , 기울임 강조
+<u> 밑줄
+<s> , <strike> 취소선
+<sub> , <sup> 아래첨자, 위첨자
+<big>, <small> dafault보다 글자 크게 , 작게
+<mark> 형광펜
+
+자동 스크롤 지정하기
+<marquee>텍스트<br></>
+//width,height(안쪽여백),hspace,vspace(바깥 여백),
+bgcolor,img,scrolldelay=80(default 지연시간),scrollamount=10(스크롤 속도)
+behavior=scroll R에서L로 스크롤 후 사라짐 / =alternate 좌우로 왕복 / slide R에서 L로 스크롤 후 끝에 멈춤
+loop=2 반복수 direction=left/right/up/down
+
+내부 프레임 만들기(HTML5부터 권장x)
+<iframe src="about:blank" name="frame" width height></> <a href="http:" target=frame>텍스트</a>
+
+배경음악 및 동영상 삽입하기
+<embed src="파일명.확장자" width height autostart=false(default)> 자동실행시 loop(default 1회)
+<bgsound src="파일명.확장자" loop=infinite(무한반복)>
+<audio src="파일명.확장자" autoplay controls(콘솔 창)></오디오2개부터 종료태그必>
+
+

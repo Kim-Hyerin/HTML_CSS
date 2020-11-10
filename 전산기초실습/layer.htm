@@ -1,0 +1,114 @@
+﻿<html><head><title>11주차 실습과제</title>
+<style>
+
+   body{
+      background-color:black;
+      margin:0;
+   }
+   
+   #layer1{
+      position:absolute;
+      left:100; top:50;
+      width:1200;height:500;
+      background-color:green;
+   }
+   
+   #layer2{
+      position:absolute;
+      left:200; top:150;
+      width:1200;height:500;
+      background-color:yellow;
+      visibility:hidden;
+   }
+   
+   #layer3{
+      position:absolute;
+      left:300; top:250;
+      width:1200;height:500;
+      background-color:skyblue;
+      visibility:hidden;
+   }
+   
+   #layer4{
+      width:470;height:350;
+      background-color:yellowgreen;
+      float:left;
+      margin:20 50;
+   }
+   
+   #layer5{
+      width:470;height:350;
+      background-color:yellowgreen;
+      float:right;
+      margin:20 50;
+   }
+   
+   .ft1{
+      font-size:50pt;
+      text-align:center;
+      color:yellow;
+      padding:20;
+   }
+   
+   .ft2{
+      font-size:25pt;
+      text-align:center;
+      color:navy;
+      font-weight:bold;
+   }
+   
+   .ft3{
+      font-size:40pt;
+      text-align:center;
+      color:navy;
+      padding:20;
+      font-family:휴먼옛체;
+   }
+   
+   .ft4{
+      font-size:25pt;
+      text-align:center;
+      color:green;
+      font-weight:bold;
+   }
+   
+   .ft5{
+      font-size:25pt;
+      text-align:center;
+      color:navy;
+      padding-top:40;
+      font-weight:bold;
+   }
+   
+   .ft6{
+      font-size:25pt;
+      text-align:center;
+      color:navy;
+      padding-top:80;
+      font-weight:bold;
+   }
+   
+</style></head>
+<body>
+<div id=layer1
+   onMouseDown="layer2.style.visibility='visible'"
+   onMouseMove="layer2.style.visibility='hidden'">
+<div class=ft1>전산기초실습 실습과제</div><br><br>
+<div class=ft2>이 레이어를 클릭하면 다음 레이어가 나타납니다.</div>
+</div>
+<div id=layer2
+   onMouseDown="layer3.style.visibility='visible'">
+<div class=ft3>학번: 20183257 이름: 김동훈</div><br><br>
+<div class=ft4>이 레이어를 클릭하면 다음 레이어가 나타납니다.<br><br>
+초록 레이어에 마우스 포인터를 올리면 이 레이어가 사라집니다.</div>
+</div>
+<div id=layer3
+   onMouseDown="layer3.style.visibility='hidden'">
+<div class=ft5>이 레이어를 숨기고 싶다면 이 레이어를 클릭하세요!</div>
+<div id=layer4><div class=ft6>왼쪽 레이어 입니다.<br><br>
+float 속성을 사용하여 왼쪽<br>에 배치하세요.</div></div>
+<div id=layer5><div class=ft6>오른쪽 레이어입니다.<br><br>
+float 속성을 사용하여 오른쪽<br>에 배치하세요.</div></div>
+</div>
+</body>
+</html>

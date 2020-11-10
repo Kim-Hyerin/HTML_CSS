@@ -1,0 +1,83 @@
+﻿<html>
+<head><title>14주차 실습과제</title>
+<style>
+	body {font-family:굴림;margin:0;text-align:center}
+	h1 {color:navy;}
+	header {color:navy;font-size:40;text-shadow:4 4 4 red;
+			height:90;background-color:#FFD9EC;padding:20;}
+	aside {width:25%;height:450;background-color:#E4C97E;padding:20;float:left;}
+	article {height:450;padding:20;
+			background:url(pizza.jpg) repeat-y;background-size:100 100;
+			background-position:right;background-color:lightgray;}
+	footer {color:navy;height:90;background-color:#E4F7BA;padding:20;clear:left;}
+	#age {color:green;border:5 ridge red;margin:10;box-shadow:3 3 green;}
+	#order {color:green;border:5 ridge red;margin:10;box-shadow:3 3 green;}
+	#agelayer {position:absolute;left:500;top:160;width:530;height:110;
+				z-index:1;background-color:#FAF4C0;visibility:hidden;}
+	#orderlayer {position:absolute;left:550;top:200;width:650;height:300;
+				z-index:2;background-color:#D4F4FA;visibility:hidden;padding:30 0 0 30;}
+	fieldset {border:navy 2 solid; width:300;padding:10;}
+	form {float:left;font-size:15;font-weight:bold;}
+	pzborder {border:3 double red;}
+</style>
+</head>
+<body>
+<header>
+전산기초실습 실습과제
+</header>
+<aside>
+<div id=age onmousedown="agelayer.style.visibility='visible'">
+<h2>당신의 나이는?</h2></div><br>
+<div id=order onmousedown="orderlayer.style.visibility='visible'">
+<h2>피자 주문하기</h2></div>
+</aside>
+<article>
+<div id=agelayer>
+<script>
+	a = prompt("태어난 년도를 입력하여 주세요!","2001");
+	document.write("<br>"+"<h1>"+"당신의 나이는 "+(2020-a+1)+"세 입니다."+"</h1>");
+</script></div>
+<div id=orderlayer>
+<form>
+<hr width=330>
+주문자:<input type=text name=name size=30><br>
+연락처:<input type=text name=phone size=30><br><br>
+<fieldset><legend>피자 크기</legend>
+<input type=radio name=size value=small>Small
+<input type=radio name=size value=medium checked>Medium
+<input type=radio name=size value=large>Large
+<input type=radio name=size value=family>Family
+</fieldset><br>
+<fieldset><legend>피자 토핑</legend>
+<input type=checkbox name=topping value=bulgogi>불고기
+<input type=checkbox name=topping value=shrimp>새우
+<input type=checkbox name=topping value=nushroom>버섯
+<input type=checkbox name=topping value=onion>양파
+<input type=checkbox name=topping value=cheese checked>치즈
+</fieldset><br>
+배달 시간:<select name=ampm>
+		<option value=am>오전
+		<option value=pm>오후</select>
+		<select name=hour>
+		<option value=one>1시
+		<option value=two>2시
+		<option value=three>3시
+		<option value=four>4시
+		<option value=five>5시</select>
+		<select name=minute>
+		<option value=ten>10분
+		<option value=twenty>20분
+		<option value=thirty>30분
+		<option value=fourty>40분
+		<option value=fifty>50분</select>&nbsp;&nbsp;
+<input type=submit value="주문하기">
+<hr width=330>
+</form>
+<br><img src="pizza.jpg" width="230" height="230" style="border:8 double red">
+</div>
+</article>
+<footer>
+<h2>학번:20183270&nbsp;&nbsp;&nbsp;&nbsp;이름:김혜린</h2>
+</footer>
+</body>
+</html>
